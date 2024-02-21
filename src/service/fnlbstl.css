@@ -1,0 +1,44 @@
+/* Fuentes empleadas */
+
+
+/* Ajustes generales para las ventanas */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    cursor: url('./image/cursor.png'), auto;
+}
+
+img {
+    user-select: none;
+}
+
+/* VISTAS */
+#vistaInicio {
+    background-image: url('./image/biblio70dark.jfif');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BOTONES */
+button {
+    background-image: url(./image/pergaboton.png);
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #67ff49;
+}
+
+button:active {
+    background-color: #4cb338;
+}
