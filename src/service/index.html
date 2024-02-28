@@ -13,10 +13,41 @@
         </div>
         <div id="vistaInicio">
             <div class="container">
-                <button>Libros</button>
-                <button>Autores</button>
+                <button class="irALibros">Libros</button>
+                <button class="irAAutores">Autores</button>
             </div>
+        </div>
+        <div id="vistaListarAutores">
+            <!-- Aquí vamos a disponer de la lista de los autores, botones para eliminar a cada autor -->
+            <p>Esta página no está disponible por culpa de una cerradura arcana. Será inaccesible hasta nueva orden.</p>
+            <button class="irALibros">Libros</button>
+        </div>
+        <div id="vistaInsertarAutores">
+            <form class="container">
+                <!-- ¿Qué tipo de campo es nacionalidad? -->
+                <!-- structure A_Gd+CsYxn8_PE -->
+                <label for="nombre">Nombre o pseudónimo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+        
+                <label for="fechaMuerte">Fecha de Muerte:</label>
+                <input type="date" id="fechaMuerte" name="fechaMuerte">         
             
+                <label for="nacionalidad">Nacionalidad:</label>
+                <input type="text" id="nacionalidad" name="nacionalidad" required>
+            
+                <label for="biografia">Biografía:</label>
+                <textarea id="biografia" name="biografia" rows="4" required></textarea>
+            
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="foto">
+
+                <label for="obras">Obras:</label>
+                <textarea id="obras" name="obras" rows="4" required></textarea>
+                <button>Nuevo autor</button>
+            </form>
         </div>
         <script src=""></script>
     </body>
