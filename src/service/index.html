@@ -9,44 +9,69 @@
     </head>
     <body>
         <div id="vistaPortada">
-            <!-- Esta hay que plantearla bien,vamos a ver la de Sergio a ver si nos orientamos un poco -->
-            <img src="./image/caballerocandil-removebg-preview.png">
+            <div>
+                <img src="./image/caballerocandil-removebg-preview.png">
+                <h1 id="titulo">Bienvenido a FanLib, viajero</h1>
+            </div>
         </div>
         <div id="vistaInicio">
             <div class="container">
-                <button class="irALibros">Libros</button>
-                <button class="irAAutores">Autores</button>
+                <button class="irAAutores">
+                    <img src="image/letrero.png">
+                    <h3>Autores</h3>
+                </button>
+                <button class="irALibros">
+                    Libros
+                </button>
             </div>
         </div>
-        <div id="vistaListarAutores">
+        <div id="vistaListarAutores" class="clausurado">
             <!-- Aquí vamos a disponer de la lista de los autores, botones para eliminar a cada autor -->
             <p>Esta página no está disponible por culpa de una cerradura arcana. Será inaccesible hasta nueva orden.</p>
             <button class="irALibros">Libros</button>
         </div>
+        <div id="vistaListarLibros" class="clausurado">
+            <!-- Aquí vamos a disponer de la lista de los autores, botones para eliminar a cada autor -->
+            <p>Esta página no está disponible por culpa de una cerradura arcana. Será inaccesible hasta nueva orden.</p>
+            <button class="irAAutores">Autores</button>
+        </div>
         <div id="vistaInsertarAutores">
             <form class="container">
-                <!-- ¿Qué tipo de campo es nacionalidad? -->
-                <!-- structure -->
-                <label for="nombre">Nombre o pseudónimo:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <div class="contenido">
+                    <label for="nombre">Nombre o pseudónimo:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
 
-                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                <div class="contenido">
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                </div>
         
-                <label for="fechaMuerte">Fecha de Muerte:</label>
-                <input type="date" id="fechaMuerte" name="fechaMuerte">         
+                <div class="contenido">
+                    <label for="fechaMuerte">Fecha de Muerte:</label>
+                    <input type="date" id="fechaMuerte" name="fechaMuerte">   
+                </div>
+                
+                <div class="contenido">
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <input type="text" id="nacionalidad" name="nacionalidad">
+                </div>
             
-                <label for="nacionalidad">Nacionalidad:</label>
-                <input type="text" id="nacionalidad" name="nacionalidad" required>
+                <div class="contenido">
+                    <label for="biografia">Biografía:</label>
+                    <textarea id="biografia" name="biografia" rows="4"></textarea>
+                </div>
+                
             
-                <label for="biografia">Biografía:</label>
-                <textarea id="biografia" name="biografia" rows="4" required></textarea>
-            
-                <label for="foto">Foto:</label>
-                <input type="file" id="foto" name="foto">
+                <div class="contenido">
+                    <label for="foto">Foto:</label>
+                    <input type="file" id="foto" name="foto">
+                </div>
 
-                <label for="obras">Obras:</label>
-                <textarea id="obras" name="obras" rows="4" required></textarea>
+                <div class="contenido">
+                    <label for="obras">Obras:</label>
+                    <textarea id="obras" name="obras" rows="4"></textarea>
+                </div>
                 <button>Nuevo autor</button>
             </form>
         </div>

@@ -1,44 +1,104 @@
-/* Fuentes empleadas */
+/* ----------------FUENTES EMPLEADAS */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+    /* font-family: 'Cinzel', serif; */
 
+@font-face {
+    font-family: 'Magic Retro';
+    src:    url('fonts/Magic\ Retro.ttf') format('truetype');
+        /* font-family: 'Magic Retro', sans-serif; */
 
-/* Ajustes generales para las ventanas */
+    font-family: 'Storm Gust';
+    src:    url('./fonts/Storm Gust.woff') format('woff'),
+            url('./fonts/Storm Gust.ttf') format('truetype'),
+            url('./fonts/Storm Gust.otf') format('opentype');
+        /* font-family: 'Storm Gust', sans-serif; */
+}
+
+/* ----------------AJUSTES GENERALES DE LAS VENTANAS */
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    cursor: url('./image/cursor.png'), auto;
+    font-family: 'Cinzel', serif;
 }
 
 img {
     user-select: none;
 }
 
-/* VISTAS */
-#vistaInicio {
-    background-image: url('./image/biblio70dark.jfif');
+.container {
+    background-color: #000000;
+    height: 70%;
+    width: 30%;
+    border-radius: 25px;
+    filter: opacity(65%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------VISTAS */
+#vistaPortada{
+    background-image: url('./image/portadafanlib.jfif');
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    display: none;/* -----------------------> Esta es la vista inicial */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo {
+    color: white;
+    border-radius: 10px;
+    background-color: #000000;
+    padding: 5vh;
+}
+
+#vistaPortada div {
+    box-shadow: 0 0 50px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    background-color: #000000;
+    filter: opacity(80%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-/* BOTONES */
-button {
-    /* background-image: url('./image/pergaboton.png'); */
-    padding: 10px 20px;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* VISTA - INICIO */
+#vistaInicio {
+    background-image: url('./image/biblio70dark.jfif');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-button:hover {
-    background-color: #67ff49;
+#vistaListarLibros {
+    display: none;
+}
+
+#vistaListarAutores {
+    display: none;
+}
+
+#vistaInsertarAutores {
+    display: none;
+}
+
+/* BOTONES */
+button {
+    margin: 1rem;
+}
+
+/* button:hover {
+    
 }
 
 button:active {
-    background-color: #4cb338;
-}
+    
+} */
