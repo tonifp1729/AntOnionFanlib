@@ -27,7 +27,7 @@ img {
 
 /* BOTONES */
 button {
-    background-image: url(./image/pergaboton.png);
+    /* background-image: url('./image/pergaboton.png'); */
     padding: 10px 20px;
     color: rgb(0, 0, 0);
     border: none;
