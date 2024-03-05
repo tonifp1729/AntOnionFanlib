@@ -24,6 +24,8 @@ class Controlador{
         this.vistas.set(Vista.VistaListarAutores, new ListarAutores(this, divListarAutores));
         this.vistas.set(Vista.VistaInsertarAutor, new NuevoAutor(this, divInsertarAutor));
         this.vistas.set(Vista.VistaListarLibros, new ListarLibros(this,divListarLibros));
+
+        this.verVista(Vista.VistaPortada);
     }
 
     verVista(vista) {
@@ -36,7 +38,6 @@ class Controlador{
             vista.mostrar(false);
         }
     }
-
 }
 
 //Cargamos el controlador

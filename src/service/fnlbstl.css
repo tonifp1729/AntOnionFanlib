@@ -79,7 +79,7 @@ input{
     background-image: url('./image/biblio70dark.jfif');
     background-size: cover;
     height: 100vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -104,12 +104,24 @@ input{
 
 /* VISTA - LISTADO DE LIBROS */
 #vistaListarLibros {
-    display: none;
+    background-image: url('./image/listarlibrosfondo.jfif');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* VISTA - LISTADO DE AUTORES */
 #vistaListarAutores {
-    display: none;
+    background-image: url('./image/eliminarlibrosfondo.jfif');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* VISTA - INSERTAR NUEVO AUTOR */
@@ -117,7 +129,7 @@ input{
     background-image: url('./image/aniadirautoresfondo.jfif');
     background-size: cover;
     height: 100vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -151,7 +163,7 @@ a:hover{
     cursor: url('./image/cursor_interactivo.png'), auto;
 }
 
-input:hover {
+input:hover, input[type="file"]:hover, textarea {
     cursor: url('./image/cursor_escritura.png'), auto;
 }
 

@@ -16,11 +16,11 @@
         </div>
         <div id="vistaInicio">
             <div class="container">
-                <button class="letrero" class="irAAutores">
+                <button class="letrero">
                     <img src="image/letrero.png">
                     <h3>Autores</h3>
                 </button>
-                <button class="letrero" class="irALibros">
+                <button class="letrero">
                     <img src="image/letrero.png">
                     <h3>Libros</h3>
                 </button>
@@ -28,13 +28,31 @@
         </div>
         <div id="vistaListarAutores" class="clausurado">
             <!-- Aquí vamos a disponer de la lista de los autores, botones para eliminar a cada autor -->
-            <p>Esta página no está disponible por culpa de una cerradura arcana. Será inaccesible hasta nueva orden.</p>
-            <button class="irALibros">Libros</button>
+            <div class="container">
+                <p>Esta página no está disponible por culpa de una cerradura arcana. Será inaccesible hasta nueva orden.</p>
+                <button class="letrero">
+                    <img src="image/letrero.png">
+                    <h3>Nuevo autor</h3>
+                </button>
+                <button class="letrero">
+                    <img src="image/letrero.png">
+                    <h3>Libros</h3>
+                </button>
+            </div>
         </div>
         <div id="vistaListarLibros" class="clausurado">
             <!-- Aquí vamos a disponer de la lista de los autores, botones para eliminar a cada autor -->
-            <p>Esta página no está disponible por culpa de una cerradura arcana. Será inaccesible hasta nueva orden.</p>
-            <button class="irAAutores">Autores</button>
+            <div class="container">
+                <p>Esta página no está disponible por culpa de una cerradura arcana. Será inaccesible hasta nueva orden.</p>
+                <button class="letrero">
+                    <img src="image/letrero.png">
+                    <h3>Autores</h3>
+                </button>
+                <button class="letrero">
+                    <img src="image/letrero.png">
+                    <h3>Nuevo autor</h3>
+                </button>
+            </div>
         </div>
         <div id="vistaInsertarAutores">
             <form class="container">
@@ -73,9 +91,10 @@
                     <label for="obras">Obras:</label>
                     <textarea id="obras" name="obras" rows="4"></textarea>
                 </div>
+
                 <button id="insertarAutor" class="letrero">
                     <img src="image/letrero.png">
-                    <h3>Nuevo autor</h3>
+                    <h3>Añadir autor</h3>
                 </button>
             </form>
         </div>
