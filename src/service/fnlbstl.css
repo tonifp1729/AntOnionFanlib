@@ -18,7 +18,9 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Cinzel', serif;
+    color: white;
+    font-family: 'Storm Gust', sans-serif;
+    cursor: url('./image/cursor.png'), auto;
 }
 
 img {
@@ -28,13 +30,18 @@ img {
 .container {
     background-color: #000000;
     height: 70%;
-    width: 30%;
+    width: 55%;
     border-radius: 25px;
-    filter: opacity(65%);
+    filter: opacity(85%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+}
+
+input{
+    font-family: 'Cinzel', serif;
 }
 
 /* ----------------VISTAS */
@@ -43,7 +50,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    display: none;/* -----------------------> Esta es la vista inicial */
+    display: flex;/* -----------------------> Esta es la vista inicial */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -72,33 +79,82 @@ img {
     background-image: url('./image/biblio70dark.jfif');
     background-size: cover;
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.letrero{
+    height: 50px;
+    position: relative;
+    margin-bottom: 10vh;
+}
+
+.letrero img{
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.letrero h3{
+    position: absolute;
+    top: 15%;
+    transform: translate(-50%, -50%);
+}
+
+/* VISTA - LISTADO DE LIBROS */
 #vistaListarLibros {
     display: none;
 }
 
+/* VISTA - LISTADO DE AUTORES */
 #vistaListarAutores {
     display: none;
 }
 
+/* VISTA - INSERTAR NUEVO AUTOR */
 #vistaInsertarAutores {
+    background-image: url('./image/aniadirautoresfondo.jfif');
+    background-size: cover;
+    height: 100vh;
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido {
+    margin-bottom: 0.5rem;
+}
+
+label {
+    margin-bottom: 0.05rem; /* Espacio inferior de las etiquetas */
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho total */
 }
 
 /* BOTONES */
-button {
+button{
+    font-family: 'Cinzel', serif;
     margin: 1rem;
+    border: none; 
+    background: none;
 }
 
-/* button:hover {
-    
+a:hover{
+    cursor: url('./image/cursor_interactivo.png'), auto;
 }
 
-button:active {
-    
-} */
+input:hover {
+    cursor: url('./image/cursor_escritura.png'), auto;
+}
+
+button:hover{
+    cursor: url('./image/cursor_interactivo.png'), auto;
+}

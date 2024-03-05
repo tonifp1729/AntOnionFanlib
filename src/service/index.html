@@ -16,12 +16,13 @@
         </div>
         <div id="vistaInicio">
             <div class="container">
-                <button class="irAAutores">
+                <button class="letrero" class="irAAutores">
                     <img src="image/letrero.png">
                     <h3>Autores</h3>
                 </button>
-                <button class="irALibros">
-                    Libros
+                <button class="letrero" class="irALibros">
+                    <img src="image/letrero.png">
+                    <h3>Libros</h3>
                 </button>
             </div>
         </div>
@@ -72,9 +73,12 @@
                     <label for="obras">Obras:</label>
                     <textarea id="obras" name="obras" rows="4"></textarea>
                 </div>
-                <button>Nuevo autor</button>
+                <button id="insertarAutor" class="letrero">
+                    <img src="image/letrero.png">
+                    <h3>Nuevo autor</h3>
+                </button>
             </form>
         </div>
-        <script src=""></script>
+        <script src="../controller/controlador.js" type="module"></script>
     </body>
 </html>

@@ -14,7 +14,7 @@ export class Vista {
 
     mostrar(ver) {
         if (ver)
-            this.base.style.display = 'block'
+            this.base.style.display = 'flex'
         else 
             this.base.style.display = 'none'
     }
