@@ -15,7 +15,7 @@ export class Portada extends Vista {
         // Inicia el temporizador para cambiar de vista después de 15 segundos
         setTimeout(function() {
             vistaactual.cambiarAVistaInicio(); // Llama a la función para cambiar a la vista "vistainicio"
-        }, 2000);
+        }, 3000);
     }
 
     cambiarAVistaInicio() {
