@@ -50,26 +50,26 @@ export class NuevoAutor extends Vista {
 
     async insertar() {
         try {
-            const formulario = this.base.querySelector('form'); // Utiliza la base de la vista como formulario
+            const formulario = this.base.querySelector('form'); //Utiliza la base de la vista como formulario
             const formData = new FormData(formulario);
             
-            // Crea una instancia de la clase Rest
+            //Crea una instancia de la clase Rest
             const rest = new Rest();
 
-            // Intenta crear un nuevo autor utilizando el método crearAutor de la instancia de Rest
+            //Intenta crear un nuevo autor utilizando el método crearAutor de la instancia de Rest
             const respuesta = await rest.crearAutor(formData);
             
-            // Maneja la respuesta del servidor según sea necesario
+            //Maneja la respuesta del servidor según sea necesario
             if (respuesta) {
-                // La inserción en la base de datos fue exitosa
+                //La inserción en la base de datos fue exitosa
                 alert('Autor insertado correctamente.');
             } else {
-                // La inserción en la base de datos falló
+                //La inserción en la base de datos falló
                 console.error('Error al añadir nuevo autor');
-                alert('Ocurrió un error al insertar el autor. Por favor, inténtalo de nuevo más tarde.');
+                alert('Ocurrió un error al insertar el autor.');
             }
         } catch (error) {
-            // Maneja cualquier error
+            //Maneja cualquier error
             console.error('Error al insertar autor:', error);
             alert('Ocurrió un error al insertar el autor. Por favor, inténtalo de nuevo más tarde.');
         }
