@@ -74,7 +74,7 @@ export class NuevoAutor extends Vista {
     async insertar() {
         try {
             // Obtiene los valores de los campos del formulario
-            const nombre = this.CampoNombre.value;
+            const nombre = this.campoNombre.value;
             const fechaNacimiento = this.campoFechaNacimiento.value;
             const fechaMuerte = this.campoFechaMuerte.value;
             const nacionalidad = this.campoNacionalidad.value;
